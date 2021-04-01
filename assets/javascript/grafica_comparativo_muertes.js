@@ -17,7 +17,7 @@ var margin = {
 
 w = (w- (margin.left + margin.right) );
 h = (h - (margin.top + margin.bottom));
-var url = "https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos_abiertos/formato_especial/comparativo_muertes_acumuladas.csv";
+var url = "https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos_abiertos/formato_especial/comparativo_muertes_acumuladas.csv";
 
 var tip = d3.select("#grafica_comparativo_muertes").append("div")
             .attr("class", "tip")

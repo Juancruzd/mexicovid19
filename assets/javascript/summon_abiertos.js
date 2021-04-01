@@ -1,7 +1,7 @@
 // SUMMON
 // URL
 
-var urlUpdateTime="https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/last_updated.csv";
+var urlUpdateTime="https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/last_updated.csv";
 
 d3.csv(urlUpdateTime,function(data) {
   formatMonth = d3.timeFormat("%b"), //%m

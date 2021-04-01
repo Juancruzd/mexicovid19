@@ -12,7 +12,7 @@ var margin = {top: 10, right: 10, bottom: 50, left: 40},
     w = w - margin.left - margin.right,
     h = h - margin.top - margin.bottom;
 
-var urlNuevos = "https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos_abiertos/formato_especial/comparativo_muertes_nuevas.csv";
+var urlNuevos = "https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos_abiertos/formato_especial/comparativo_muertes_nuevas.csv";
 
 var widthBar = 6;
 

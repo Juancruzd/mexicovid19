@@ -1,9 +1,9 @@
 // SUMMON
 // URL
 
-var urlMuertes="https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_muertes.csv",
-    urlMuertesNuevas="https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_muertes_nuevas.csv",
-    urlUpdateTime="https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/last_updated.csv";
+var urlMuertes="https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_muertes.csv",
+    urlMuertesNuevas="https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_muertes_nuevas.csv",
+    urlUpdateTime="https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/last_updated.csv";
 
 d3.csv(urlMuertesNuevas,function(data) {
   var largo = data.length;

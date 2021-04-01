@@ -17,7 +17,7 @@
 
    w = (w- (margin.left + margin.right) );
     h = (h - (margin.top + margin.bottom));
-var url = "https://raw.githubusercontent.com/mexicovid19/Mexico-modelo/master/results/covid19_mex_fit.csv";
+var url = "https://raw.githubusercontent.com/Juancruzd/Mexico-modelo/master/results/covid19_mex_fit.csv";
 
 var tip = d3.select("#grafica_totales").append("div")
     .attr("class", "tip")

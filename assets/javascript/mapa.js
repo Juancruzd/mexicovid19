@@ -1,5 +1,5 @@
 //set dimensions
-var url = "https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/geograficos/mexico.geojson"
+var url = "https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/geograficos/mexico.geojson"
 
 var w = 900,
     h = 515,

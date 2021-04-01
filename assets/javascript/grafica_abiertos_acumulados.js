@@ -17,7 +17,7 @@ var margin = {
 
 w = (w- (margin.left + margin.right) );
 h = (h - (margin.top + margin.bottom));
-var url = "https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos_abiertos/formato_especial/pruebas_casos_acumulados.csv";
+var url = "https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos_abiertos/formato_especial/pruebas_casos_acumulados.csv";
 
 var tip = d3.select("#grafica_abiertos_acumulados").append("div")
             .attr("class", "tip")

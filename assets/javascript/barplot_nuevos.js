@@ -16,7 +16,7 @@
         },
    w = (w- (margin.left + margin.right) );
     h = (h - (margin.top + margin.bottom));
-var urlNuevos = "https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_casos_nuevos.csv";
+var urlNuevos = "https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_casos_nuevos.csv";
 
 var widthBar = 6;
 

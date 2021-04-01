@@ -16,7 +16,7 @@
         },
    w = (w- (margin.left + margin.right) );
     h = (h - (margin.top + margin.bottom));
-var url = "https://raw.githubusercontent.com/mexicovid19/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_muertes.csv";
+var url = "https://raw.githubusercontent.com/Juancruzd/Mexico-datos/master/datos/series_de_tiempo/covid19_mex_muertes.csv";
 
 var tip = d3.select("#grafica_muertes").append("div")
     .attr("class", "tip")
