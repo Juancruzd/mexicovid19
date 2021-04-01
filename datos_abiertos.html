@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<script src="{{ "/assets/javascript/summon_abiertos.js" | relative_url }}"></script>
+
+<article>
+
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+
+  <section>
+
+    <h1 class='text-center' style='margin-top:5%'>Los datos abiertos del gobierno</h1>
+
+     <div class="alert alert-dismissible alert-info" style="margin-top:5%;">
+
+       <p class='text-justify'>En esta sección presentamos el número de pruebas acumuladas y diarias con respecto al tiempo.
+         Los resultados difieren con respecto a aquellos en <a href='/'>nuestra página principal</a> debido a que los presentados aquí corresponden a la manera de actualizar los datos sobre la pandemia
+         por parte de <a href="https://www.gob.mx/salud/documentos/datos-abiertos-152127" class="alert-link" style="color:#FF8654 !important;">Dirección General de Epidemiología (DGE).</a>
+         A diferencia de los casos confirmados y anunciados diariamente por el gobierno, aquí se observan los casos por la fecha en la que se realizó la prueba.
+         La mayor diferencia con especto a la forma estándar de contar y anunciar los casos, es que para los días previos a la fecha de consulta,
+         el número de casos positivos/negativos estará subestimado dado al gran número de pruebas pendientes. Puedes leer más al respecto
+         <a href="posts/los-datos-abiertos.html" class="alert-link" style="color:#FF8654 !important;">aquí.</a></p>
+    </div>
+
+    <div class='row d-flex justify-content-center'>
+     <a href="https://api.whatsapp.com/send?&text=https://mexicovid19.github.io/datos_abiertos.html" class="fa fa-whatsapp"></a>
+     <a href="https://www.facebook.com/share.php?u=https://mexicovid19.github.io/datos_abiertos.html" class="fa fa-facebook"></a>
+     <a href="https://twitter.com/intent/tweet?text=Check%20this%20awesome%20website&url=https://mexicovid19.github.io/datos_abiertos.html&title=Mexicovid19" class="fa fa-twitter"></a>
+     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mexicovid19.github.io/datos_abiertos.html" class="fa fa-linkedin"></a>
+     <a href="http://www.reddit.com/submit?url=https://mexicovid19.github.io/&title=Mexicovid19datos_abiertos.html" class="fa fa-reddit"></a>
+    </div>
+
+
+<div class="row d-flex justify-content-center">
+
+    <div class="justify-content-center" id="grafica_abiertos_acumulados"><h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Pruebas acumuladas</h1><p id="tiempo_actualizacion_0"> </p></div>
+      <script src="{{ "/assets/javascript/grafica_abiertos_acumulados.js" | relative_url }}"></script>
+
+    <div class="justify-content-center" id="barplot_abiertos_nuevos"><h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Pruebas diarias</h1><p id="tiempo_actualizacion_1"> </p></div>
+      <script src="{{ "/assets/javascript/barplot_abiertos_nuevos.js" | relative_url }}"></script>
+
+</div>
+  </section>
+
+
+  {%- if site.posts.size > 0 -%}
+    <p class="h4">{{ page.list_title | default: "Posts" }}</p>
+    <ul class="list-unstyled">
+      {%- for post in site.posts -%}
+      <li>
+        <span class="text-muted">
+          {%- assign date_format = "%b %-d, %Y" -%}
+          {{ post.date | date: date_format }}
+        </span>
+        <p class="h5">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </p>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+</article>

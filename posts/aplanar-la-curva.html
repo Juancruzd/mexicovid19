@@ -1,0 +1,141 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+
+  <section>
+
+    <a href="../blog.html" class="btn btn-lg btn-outline-info mx-2" style='font-size: 15px'>¡Revisa más de nuestro blog!</a>
+
+    <h3 style='text-transform: none; margin-top: 5%;'>"Aplanar la curva" no se ve como una curva plana: la conferencia matutina del 5 de mayo en contexto</h3>
+
+    <h5 style='text-transform: none;'>
+      <a href="/about.html" class="alert-link">Rodrigo Leal Cervantes</a> • 6 de mayo, 2020</h5>
+
+      <div class='row'>
+      <a href="https://api.whatsapp.com/send?&text=https://mexicovid19.github.io/posts/aplanar-la-curva.html" class="fa fa-whatsapp"></a>
+      <a href="https://www.facebook.com/share.php?u=https://mexicovid19.github.io/posts/aplanar-la-curva.html&title=Mexicovid19" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/intent/tweet?text=Check%20this%20awesome%20website&url=https://mexicovid19.github.io/posts/aplanar-la-curva.html&title=Mexicovid19" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mexicovid19.github.io/posts/aplanar-la-curva.html" class="fa fa-linkedin"></a>
+      <a href="http://www.reddit.com/submit?url=https://mexicovid19.github.io/posts/aplanar-la-curva.html&title=Mexicovid19" class="fa fa-reddit"></a>
+      </div>
+
+    <br>
+    <p class='text-justify' style='margin-top: 3%'>En la conferencia de prensa matutina del día martes 5 de mayo (<a href="https://www.eluniversal.com.mx/nacion/mexico-ha-aplanado-la-curva-epidemica-de-covid-19-lopez-gatell" class="alert-link">aquí</a> la nota que publicó El Universal),
+      el Dr Hugo López-Gattel explicó que México ha aplanado la curva ya que la velocidad a la que se propaga el virus
+      (medida con el tiempo de duplicación) ha disminuido.</p>
+
+    <p class='text-justify'>El subsecretario también presentó dos gráficas que hablan de la evolución de la pandemia,
+      y a nuestro parecer lo hizo de forma confusa. En una de ellas se puede ver que las curvas "se aplanan",
+      pero esto se debe a la manera en que se contabilizan los casos y no tiene que ver con la velocidad de la pandemia.
+      Hace falta más contexto para entender estas dos gráficas a fondo.</p>
+
+    <p class='text-justify'>La primera gráfica compara la evolución del número de casos positivos de Covid-19 en México y en otros países,
+      y se puede ver al inicio del video. La segunda se puede ver a partir del minuto 1:32 del video y
+      en ella se comparan las 32 entidades federativas entre sí (ver Fig. 1).
+      Ambas gráficas presentan en el eje "x" los días que han transcurrido desde que se contabilizaron 100 casos (en cada país o estado),
+      y en el eje "y" el número acumulado de casos confirmados (en escala logarítmica).</p>
+
+    <p class='text-justify'>El eje horizontal que representa el tiempo es el que nos interesa aquí.
+      Si bien el eje no es diferente entre las dos gráficas,
+      sí hay una diferencia en el contexto de cómo se cuentan los casos en uno y otro caso.</p>
+
+    <p class='text-justify'>La Secretaría de Salud a través de la Dirección General de Epidemiología (DGE) publica todos los días un archivo
+      de "datos abiertos" con la información de todos los pacientes a los que se les ha hecho una prueba para detectar el virus.
+      Para cada paciente es posible saber la fecha en que visitaron una Unidad Médica
+      (y asumimos que esta es también la fecha en que la prueba se lleva a cabo).</p>
+
+    <p class='text-justify'>La prueba para detectar el virus tarda varios días y cuando se conoce un resultado positivo,
+      tenemos dos maneras de contabilizar el caso. La primera opción es contar el caso el día que se conoce el resultado.
+      Por ejemplo, el día de ayer (5 de mayo) se dieron a conocer 1120 pruebas positivas.
+      Podemos asignar este número al día 5 de mayo, y este número nunca vuelve a cambiar.</p>
+
+    <p class='text-justify'>La segunda opción es contar los casos confirmados el día que se les realizó la prueba a los paciente.
+      De esta manera, los números cambian de forma retroactiva para los días anteriores y
+      es normal que incrementen hasta que haya pasado bastante más de una semana.
+      Esto se debe a que la mayoría de las pruebas tardan entre 3 y 7 días.</p>
+
+    <p class='text-justify'>La primera forma de contabilizar los casos que llamaremos la forma "diaria" es la que se utiliza para
+      la primer gráfica de la conferencia matutina Es común en el ámbito internacional y se utiliza por <a href="https://www.worldometers.info/coronavirus/" class="alert-link">Worldometers</a> y <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" class="alert-link">la Universidad Johns Hopkins</a>.
+      También se encuentra en la <a href="/" class="alert-link">página principal de nuestro tablero</a>.</p>
+
+    <p class='text-justify'>La segunda forma que llamaremos "retroactiva" se utiliza para la gráfica que compara los estados y
+      también en <a href="https://coronavirus.gob.mx/datos/" class="alert-link">el tablero oficial</a> del gobierno. Nuestro tablero tiene una pestaña dedicada <a href="/datos_abiertos.html" class="alert-link">aquí</a>.</p>
+
+    <p class='text-justify'>Utilizando el recuento retroactivo hemos replicado la gráfica de la conferencia a continuación.
+      Esto es posible gracias a que la DGE publica la información de cada caso (pocos países publican información tan detallada).</p>
+
+
+    <div class="justify-content-center">
+        <figure style='max-width: 800px;'>
+            <img src="/posts/static/interpretacion_da.png" alt="Evolución de los casos totales (conteo diario)">
+            <figcaption class="text-center"><span class="highlight">Figura 1</span>: Evolución de los totales por estado cuando los casos se asignan el día que se hace la prueba (conteo retroactivo)</figcaption>
+        </figure>
+    </div>
+
+    <p class='text-justify'>Podemos notar que las curvas se aplanan hacia el final, del lado derecho, pero esto se debe a la manera
+      en que se contabilizan los casos. Puesto que aún no conocemos el resultado de las pruebas que se hicieron ayer, anteayer, etc,
+      el número de casos acumulados es poco más alto que el de hace una semana.</p>
+
+    <p class='text-justify'>Es muy importante entender que López-Gatell no se refiere a las "planicies" que vemos arriba
+      cuando dice que México ha aplanado la curva. Él está hablando de la pendiente que tiene la curva antes de llegar a las planicies
+      (que en realidad no contienen mucha información). La pendiente mide el tiempo de duplicación, el número de días que tienen que
+      pasar para que los casos confirmados aumenten al doble, y si el tiempo de duplicación se hace más y más largo,
+      quiere decir que la propagación del virus se está desacelerando.</p>
+
+    <p class='text-justify'>Si ahora utilizamos el recuento diario y contabilizamos los casos el día que se conoce el resultado, la gráfica luce distinto.</p>
+
+    <div class="justify-content-center">
+        <figure style='max-width: 800px;'>
+            <img src="/posts/static/interpretacion_jh.png" alt="Evolución de los casos totales (conteo retroactivo)">
+            <figcaption class="text-center"><span class="highlight">Figura 2</span>: Evolución de los totales por estado cuando los casos se contabilizan el día que se conoce el resultado de las pruebas (conteo diario)</figcaption>
+        </figure>
+    </div>
+
+    <p class='text-justify'>Abajo comparamos tres estados para observar como se ven las curvas lado a lado y resaltamos algunos aspectos que tienen interpretación epidemiológica.</p>
+
+    <!-- nada mas no logro centrar las figuras con nada :( -->
+    <div class="justify-content-center">
+        <figure style='max-width: 800px;'>
+            <img src="/posts/static/interpretaciones_anotadas.png" alt="Comparación de las dos formas de recuento">
+            <figcaption class='text-center'><span class="highlight">Figura 3</span>: Comparación de las dos formas de recuento para tres estados de la República</figcaption>
+        </figure>
+    </div>
+
+    <p class='text-justify'>En conclusión, ambas formas de contabilizar los casos tienen ventajas y desventajas,
+      y no hay una que sea correcta y la otra incorrecta.  Es importante entender que las gráficas y los datos tienen asociado un contexto,
+      y aquí hemos explicado lo que no se mencionó en la conferencia matutina.</p>
+
+    <p class='text-justify'>Obviamente, corresponde a Salud y al Dr López-Gatell determinar si México ha aplanado o no la curva y lo harán utilizando el tiempo de duplicación.</p>
+  </section>
+
+
+  {%- if site.posts.size > 0 -%}
+    <p class="h4">{{ page.list_title | default: "Posts" }}</p>
+    <ul class="list-unstyled">
+      {%- for post in site.posts -%}
+      <li>
+        <span class="text-muted">
+          {%- assign date_format = "%b %-d, %Y" -%}
+          {{ post.date | date: date_format }}
+        </span>
+        <p class="h5">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </p>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+</article>
