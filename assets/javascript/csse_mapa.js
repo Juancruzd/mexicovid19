@@ -45,7 +45,8 @@ d3.json(urlMapa, function (json) {
              states.push(data[i]);
         }
     }  
-    for (var j = 0; j < json.features.length-1; j++) { 
+    console.log(json.features);
+    for (var j = 1; j < json.features.length-1; j++) { 
         console.log(json.features[j].properties.name);
         var position=states.findIndex(x => x.Province_State === json.features[j].properties.name);
         console.log(states[position]);
