@@ -13,7 +13,7 @@ d3.csv(urlTotal,function(data) {
   var largo = data.length;
   var tope =largo-1;
   var div = document.getElementById('totales'); 
-     div.innerHTML =Number(data[tope]["Nacional"]).toLocaleString('es-us');
+     //div.innerHTML =Number(data[tope]["Nacional"]).toLocaleString('es-us');
   });
 /*
 d3.csv(urlRecu,function(data) {
@@ -35,14 +35,14 @@ d3.csv(urlMuertes,function(data) {
   var largo = data.length;
   var tope =largo-1;
   var div = document.getElementById('muertes'); 
-      div.innerHTML =Number(data[tope]["Nacional"]).toLocaleString('es-us');
+      //div.innerHTML =Number(data[tope]["Nacional"]).toLocaleString('es-us');
   });
 
 d3.csv(urlNuevos,function(data) {
   var largo = data.length;
   var tope =largo-1;
   var div = document.getElementById('nuevos'); 
-      div.innerHTML =Number(data[tope]["Nacional"]).toLocaleString('es-us');
+      //div.innerHTML =Number(data[tope]["Nacional"]).toLocaleString('es-us');
   });
 
   d3.csv(urlUpdateTime,function(data) {
