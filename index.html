@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,23 +14,25 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
   <title>COVID-19 México | Monitoreo constante del COVID-19 en México.</title>
-  <meta name="generator" content="Jekyll v3.8.7" />
+  <meta name="generator" content="Jekyll v3.9.0" />
   <meta property="og:title" content="COVID-19 México" />
   <meta property="og:locale" content="en_US" />
   <meta name="description" content="Monitoreo constante del COVID-19 en México." />
   <meta property="og:description" content="Monitoreo constante del COVID-19 en México." />
+  <link rel="canonical" href="https://mexicovid19.github.io/" />
+  <meta property="og:url" content="https://mexicovid19.github.io/" />
   <meta property="og:site_name" content="COVID-19 México" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="COVID-19 México" />
   <script type="application/ld+json">
-{"@type":"WebSite","headline":"COVID-19 México","url":"/","description":"Monitoreo constante del COVID-19 en México.","name":"COVID-19 México","@context":"https://schema.org"}</script>
+{"headline":"COVID-19 México","@type":"WebSite","url":"https://mexicovid19.github.io/","description":"Monitoreo constante del COVID-19 en México.","name":"COVID-19 México","@context":"https://schema.org"}</script>
   <!-- End Jekyll SEO tag -->
   <link href="https://framework-gb.cdn.gob.mx/applications/cms/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" href="assets/main.css">
-  <!-- Fontawesome 5 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="COVID-19 México" />
+  <link type="application/atom+xml" rel="alternate" href="https://mexicovid19.github.io/feed.xml"
+    title="COVID-19 México" />
   <script src="assets/javascript/bootstrap/jquery.min.js"></script>
   <script src="assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/javascript/popPyramid.js"></script>
@@ -64,10 +66,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Nacional</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
+          </li> 
           <li class="nav-item">
             <a class="nav-link" href="datos_abiertos.html">Datos abiertos</a>
           </li>
@@ -77,9 +76,7 @@
           <li class="nav-item">
             <a class="nav-link" href="estados.html">Estados</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="proyecciones.html">Proyecciones</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="about.html">Acerca de</a>
           </li>
@@ -99,8 +96,13 @@
           por favor aíslate y manda un mensaje con la palabra <a href="sms:51515;?&body=COVID19" class="alert-link"
             style="color:#FF8654 !important;">COVID19 al 51515</a>.</p>
       </div>
-      <script src="assets/javascript/summon.js"></script> 
+      <script src="assets/javascript/summon.js"></script>
+
+
+
       <div>
+
+
 
 
 
@@ -108,7 +110,7 @@
         <h1 class="text-center" style='text-transform: none;'>Casos nacionales</h1>
         <div class="row d-flex justify-content-center">
           <div class="card text-white bg-danger mb-3 col-md-4" style="max-width: 20rem;">
-            <div class="card-header text-center" style='text-transform: none;'>Totales <i style="font-size: 20px;" class="fas fa-plus-circle text-white"></i></div>
+            <div class="card-header text-center" style='text-transform: none;'>Totales</div>
             <div class="card-body">
               <h4 class="card-title text-center" id="totales"></h4>
               <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
@@ -118,7 +120,7 @@
             </div>
           </div>
           <div class="card text-white bg-warning mb-3 col-md-4" style="max-width: 20rem;">
-            <div class="card-header text-center" style='text-transform: none;'>Últimas 24h <i style="font-size: 20px;" class="fas fa-clock text-white"></i></div>
+            <div class="card-header text-center" style='text-transform: none;'>Últimas 24h</div>
             <div class="card-body">
               <h4 class="card-title text-center" id="nuevos"></h4>
               <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
@@ -128,7 +130,7 @@
             </div>
           </div>
           <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
-            <div class="card-header text-center" style='text-transform: none;'>Defunciones <i style="font-size: 20px;" class="fas fa-ribbon text-white"></i></div>
+            <div class="card-header text-center" style='text-transform: none;'>Defunciones</div>
             <div class="card-body">
               <h4 class="card-title text-center" id="muertes"></h4>
               <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
@@ -141,46 +143,35 @@
         <script src="assets/javascript/summon.js"></script>
 
 
-        <div class="alert alert-dismissible alert-info" style="margin-top:5%;">
-          <h4 class="alert-heading" style="text-transform:none;">NUEVO: </h4>
-          <ul>
-            <!--li>
-              <h6>6 mayo - ¿Qué significa aplanar la curva? Comentario en nuestro blog</h6>
-              <p>
-                Analizamos la mañanera del 5 de mayo, y decidimos escribir un pequeño texto para explicar qué
-                significaba
-                aplanar la curva en el contexto de los datos publicados por la DGE. Este texto lo puedes encontrar
-                <a href="https://mexicovid19.blogspot.com/2020/05/conferencia-del-5-de-mayo-poner-en.html"
-                  class="alert-link" style="color:#FF8654 !important;">Aquí</a>.
-              </p>
-            </li-->
-            <li>
-              <h6>6 mayo - Actualización a sección de defunciones por COVID-19 en México</h6>
-              <p>
-                Además del mapa interactivo y las series de tiempo, hemos agregado una pirámide poblacional de las
-                defunciones. Visita esta sección
-                <a href="defunciones.html" class="alert-link" style="color:#FF8654 !important;">Aquí</a>.
-              </p>
-            </li>
 
-          </ul>
 
+        <div class='row d-flex justify-content-center'>
+          <a href="https://api.whatsapp.com/send?&text=https://mexicovid19.github.io/" class="fa fa-whatsapp"></a>
+          <a href="https://www.facebook.com/share.php?u=https://mexicovid19.github.io/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/intent/tweet?text=Check%20this%20awesome%20website&url=https://mexicovid19.github.io/&title=Mexicovid19"
+            class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mexicovid19.github.io/"
+            class="fa fa-linkedin"></a>
+          <a href="http://www.reddit.com/submit?url=https://mexicovid19.github.io/&title=Mexicovid19"
+            class="fa fa-reddit"></a>
         </div>
 
-        <!--p class="mb-0"style='margin-left:5%; margin-right:5%;'>*Hemos dejado de actualizar los casos recuperados.
-  Encontramos distintas inconsistencias en el número de estos casos reportados en los medios.
-  Estas inconsistencias, junto con la falta de fuentes confiables hacen que cualquier dato reportado sobre los casos recuperados carezca de certeza.
-  Por ejemplo, <a href="https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449" class="alert-link" style="color:#FF8654 !important;">la Secretaría de Salud Pública</a>
-  no está reportando este tipo de casos,
-  mientras que páginas especializadas como el
-  <a href="http://iigea.com/amag/covid-19/" class="alert-link" style="color:#FF8654 !important;">IIGEA</a> y
-  <a href="https://www.worldometers.info/coronavirus/country/mexico/" class="alert-link" style="color:#FF8654 !important;">Worldometers</a>
-   reportan cifras inconsistentes sin fuentes accesibles.
- </p--->
+        <!--div class="alert alert-dismissible alert-info" style="margin-top:5%;">	
+  <h4 class="alert-heading" style="text-transform:none;">NUEVO: </h4>	
+  <ul>	
+    <li> <h6>12 de octubre - Cambios en el conteo oficial</h6>	
+      <p>	
+        Dados los cambios que el gobierno anunció el <a href="https://www.gob.mx/salud/documentos/datos-abiertos-152127" class="alert-link">7 de octubre del 2020</a>, observamos un elevado número de casos y muertes reportadas ese mismo día. Sin embargo,
+    esto no significa que ese día haya habido tal número de contagios/muertes, sino que ese día fueron <a style="color:#FF8654 !important;">reportados</a>. En ese sentido, los datos más apegados a lo 
+    acontecido se pueden observar en las visualizaciones por fecha de prueba/fecha de muerte.</a>	
+      </p>	
+    </li>	
+  </ul>	
+</div-->
 
         <!--INICIA MAPA-->
         <h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Mapa</h1>
-        <p id="tiempo_actualizacion_6"> </p>
+        <p id="tiempo_actualizacion_3"> </p>
         <p class='text-center'>Los colores no representan los casos totales, sino que son generados a partir de los
           casos totales por cada 100 mil habitantes</p>
 
@@ -217,35 +208,66 @@
           </div>
 
           <div class="justify-content-center" id="grafica_totales">
-            <h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Casos totales reportados por día</h1>
-            <p id="tiempo_actualizacion_3"> </p>
+            <h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Casos confirmados totales</h1>
+            <p id="tiempo_actualizacion_4"> </p>
+            <div class="btn-block justify-content-center" role="group" aria-label="Basic example">
+              <!-- Add 2 buttons -->
+              <button class="btn btn-lg btn-dark mx-2" style="max-width: 40%" id="Nuevos_JH" value="Nuevos_JH">Fecha de
+                anuncio</button>
+              <button class="btn btn-lg btn-dark mx-1" style="max-width: 40%" id="Nuevos_abiertos"
+                value="Nuevos_abiertos">Fecha de prueba</button>
+
+              <script src="assets/javascript/grafica_comparativo_casos.js"></script>
+
+            </div>
           </div>
 
           <div class="alert alert-dismissible alert-info" style="margin-top:5%;">
             <!--h4 class="alert-heading" style="text-transform:none;">Acerca de nuestras proyecciones</h4-->
             <p class="mb-0"> Los puntos azules corresponden al número de casos reportados día por día por las
               autoridades.
-              Con una línea negra mostramos un proyección de los datos con un ajuste exponencial. Un ajuste nunca es
-              100% certero.
-              En este caso mostramos la tendencia de los últimos siete días proyectada dos días más.
-              El área sombreada muesta la incertidumbre de esta proyección.
+              Los puntos naranjas representan el número de casos por la fecha en la que se realizó la prueba.
+              La información análoga es mostrada en la gráfica inferior. En ese caso presentamos también la media móvil
+              de 7 días.
+              Para saber más sobre la diferencia entre la información en azul y la información en naranja, por favor lee
+              <a href="/posts/los-datos-abiertos.html" class="alert-link" style="color:#FF8654 !important;">esto</a> o
+              dirígite
+              <a href="/datos_abiertos.html" class="alert-link" style="color:#FF8654 !important;">aquí.</a>
             </p>
           </div>
 
 
           <div class="justify-content-center" id="barplot_nuevos">
-            <h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Confirmaciones de casos por día</h1>
-            <p id="tiempo_actualizacion_4"> </p>
+            <h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Casos confirmados por día</h1>
+            <p id="tiempo_actualizacion_5"></p>
+            <div class="btn-block justify-content-center" role="group" aria-label="Basic example">
+              <!-- Add 2 buttons -->
+              <button class="btn btn-lg btn-dark mx-2" style="max-width: 40%" onclick="update('Nuevos_JH')">Fecha de
+                anuncio</button>
+              <button class="btn btn-lg btn-dark mx-1" style="max-width: 40%" onclick="update('Nuevos_abiertos')">Fecha
+                de prueba</button>
+
+              <script src="assets/javascript/barplot_comparativo_casos_nuevos.js"></script>
+
+            </div>
           </div>
-          <script src="assets/javascript/barplot_nuevos.js"></script>
+
+          <div class="alert alert-dismissible alert-info" style="margin-top:5%;">
+            <!--h4 class="alert-heading" style="text-transform:none;">Acerca de nuestras proyecciones</h4-->
+            <p class="mb-0"> El área naranja representa los casos diarios por fecha de la realización de la prueba.
+              En el área sombreada, el número de registros puede cambiar drásticamente de un día a otro,
+              ya que esta se actualizará con aquellas pruebas pendientes cuyos resultados todavía no han sido
+              presentados por el gobierno.
+              Para saber más, puedes leer nuestra sección de
+              <a href="datos_abiertos.html" class="alert-link" style="color:#FF8654 !important;">datos abiertos.</a>
+            </p>
+          </div>
 
 
-
-          <script src="assets/javascript/grafica_totales.js"></script>
 
           <div class="justify-content-center" id="pir">
             <h1 class="text-center" style='margin-top: 5%; text-transform: none;'>Casos por edad y sexo</h1>
-            <p id="tiempo_actualizacion_5"> </p>
+            <p id="tiempo_actualizacion_6"> </p>
           </div>
         </div>
 
